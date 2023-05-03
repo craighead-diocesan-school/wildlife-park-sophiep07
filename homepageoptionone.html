@@ -43,10 +43,7 @@
         }
         main {
             background-color: #6c493213;
-        }
-        body {
-            background-color: #6c493223;
-        }
+        } 
         h1 {
             color: #a1a17f;
             background-color: #544236; 
@@ -71,5 +68,18 @@
             background-color: #cbcbb6;
             transform:scale(1.1)
         }
+        body {
+            background-color: #6c493223;
+            display: grid;
+        grid: " h    h    h  " 5em
+              " n    n    n  " 3em
+              " m    m    m  " auto
+              " f    f    f  " 5em
+              / 1fr  5fr  5fr;
+        }
+      header { grid-area: h; }
+      nav    { grid-area: n; }
+      main   { grid-area: m; }
+      footer { grid-area: f; }
     </style>
 </html>
