@@ -44,8 +44,14 @@
         <h3>
             Bison
         </h3>
-        <p>
+        <div>
+            <img src="bison-3-goutham-ganesh.jpg" alt="image of a bison ">
+            <p>
             Introducing our robust bison herd, led by the mighty Thunder, and his companions, Storm and Breeze. These magnificent creatures, often referred to as buffalo, are symbols of the American West and once roamed the plains in vast numbers. Observe our bison as they graze on the grasslands, showcasing their strength and resilience. Learn about their historical significance, their role in the ecosystem, and the conservation efforts that have helped restore their populations in the wild.
+            </p>
+        </div>
+        <p class="photocaption">
+            Photo by Gouthan Ganesh.
         </p>
         <h3>
             Moose
@@ -70,11 +76,15 @@
     p{
         font-family: 'Scada', sans-serif;
         text-shadow: 2px 2px 10px#ffffff;
+        height: fit-content;
+    }
+    .photocaption {
+        font-size: 50%;
     }
     img {
         height: 200px;
         padding: 3px;
-        background-color: #aa4465;
+        background-color: #7bb787;
         align-items: center;
         margin: 10px;
     }
@@ -145,6 +155,10 @@
     footer {
         font-size:65%;
         margin-top: 80px;
+    }
+    div {
+        display: flex;
+        align-items: center;
     }
     body {
         background-color: #edf0da;
