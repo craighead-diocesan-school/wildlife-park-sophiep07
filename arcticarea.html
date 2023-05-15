@@ -44,27 +44,33 @@
         <h3>
             Polar Bears
         </h3>
-        <p>
-            Introducing our majestic polar bear duo, Aurora and Frost. These awe-inspiring creatures are the largest land carnivores on Earth and are perfectly adapted to life in the harsh Arctic environment. Watch as Aurora and Frost demonstrate their incredible swimming and hunting skills in our expansive Arctic habitat. Learn about their unique adaptations, their critical role in the Arctic ecosystem, and the urgent conservation efforts in place to address the threats they face due to climate change and habitat loss.
-        </p>
-        <img src="polar-bear-1-jason-hillier.jpg" alt="image of a polar bear standing on land">
-        <img src="polar-bear-2-peter-neumann.jpg" alt="image of a polar bear swimming">
+        <div>
+            <img src="polar-bear-1-jason-hillier.jpg" alt="image of a polar bear standing on land">
+            <img src="polar-bear-2-peter-neumann.jpg" alt="image of a polar bear swimming">
+            <p>
+                Introducing our majestic polar bear duo, Aurora and Frost. These awe-inspiring creatures are the largest land carnivores on Earth and are perfectly adapted to life in the harsh Arctic environment. Watch as Aurora and Frost demonstrate their incredible swimming and hunting skills in our expansive Arctic habitat. Learn about their unique adaptations, their critical role in the Arctic ecosystem, and the urgent conservation efforts in place to address the threats they face due to climate change and habitat loss.
+            </p>
+        </div>
         <h3>
             Arctic Foxes
         </h3>
         <p>
             Meet our playful arctic fox pair, Snow and Ice. These charming, nimble creatures are known for their striking white winter coats and incredible adaptability in the frigid Arctic climate. Observe Snow and Ice as they display their keen hunting instincts, agility, and social behaviors in our Arctic area. Discover more about their remarkable adaptations, their complex family structure, and the ongoing conservation efforts aimed at protecting their natural habitats and populations.
         </p>
-        <img src="arctic-fox-3-teresa.jpg" alt="image of an arctic fox sleeping">
-        <img src="arctic-fox-2-sridhar-chilimuri.jpg" alt="image of an arctic fox looking at the camera">
+        <div class="arcticfoximagediv">
+            <img class="arcticfoximage" src="arctic-fox-3-teresa.jpg" alt="image of an arctic fox sleeping">
+            <img class="arcticfoximage" src="arctic-fox-2-sridhar-chilimuri.jpg" alt="image of an arctic fox looking at the camera">
+        </div>
         <h3>
             Fur Seals
         </h3>
-        <p>
-            Say hello to our delightful fur seal family, Splash, Wave, and their playful pups. These endearing marine mammals are known for their dense fur, impressive agility in water, and their ability to thrive in the icy Arctic waters. Watch as Splash, Wave, and their pups demonstrate their incredible swimming and diving abilities, while also showcasing their social interactions and vocalizations. Learn about their unique physiology, their importance in the Arctic food chain, and the conservation efforts in place to ensure the survival and protection of these captivating creatures.
-        </p>
-        <img src="fur-seal-1-karen-lau.jpg" alt="image of a fur seal smiling">
-        <img src="fur-seal-2-simon-infanger.jpg" alt="image of a fur seal sleeping">
+        <div>
+            <p>
+                Say hello to our delightful fur seal family, Splash, Wave, and their playful pups. These endearing marine mammals are known for their dense fur, impressive agility in water, and their ability to thrive in the icy Arctic waters. Watch as Splash, Wave, and their pups demonstrate their incredible swimming and diving abilities, while also showcasing their social interactions and vocalizations. Learn about their unique physiology, their importance in the Arctic food chain, and the conservation efforts in place to ensure the survival and protection of these captivating creatures.
+            </p>
+            <img src="fur-seal-1-karen-lau.jpg" alt="image of a fur seal smiling">
+            <img src="fur-seal-2-simon-infanger.jpg" alt="image of a fur seal sleeping">
+        </div>
     </main>
     <footer>
         <p>
@@ -76,6 +82,7 @@
     p{
         font-family: 'Scada', sans-serif;
         text-shadow: 2px 2px 10px#ffffff;
+        height:fit-content;
     }
     img {
         height: 200px;
@@ -84,7 +91,15 @@
         align-items: center;
         margin: 10px;
     }
+    .arcticfoximagediv {
+        justify-content: center;
+    }
+    .arcticfoximage {
+        height: 250px;
+    }
     div {
+        display: flex;
+        align-items: center;
         text-align: center;
     }
     main {
